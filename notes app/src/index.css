@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-50: #fff1f1;
+  --color-maroon-100: #ffdfdf;
+  --color-maroon-200: #ffc6c6;
+  --color-maroon-300: #ff9e9e;
+  --color-maroon-400: #ff6666;
+  --color-maroon-500: #f83b3b;
+  --color-maroon-600: #e51d1d;
+  --color-maroon-700: #c11414;
+  --color-maroon-800: #a01313;
+  --color-maroon-900: #450a0a;
+  --color-maroon-950: #1a0505;
+
+  --font-outfit: "Outfit", sans-serif;
+
+  --animate-fade-in: fadeIn 0.5s ease-out;
+  --animate-modal-scale: modalScale 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes modalScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --primary: #2563eb;
+    --primary-hover: #1e40af;
+    --accent: #3b82f6;
+    --bg-main: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-border: rgba(30, 41, 59, 0.1);
+    --text-heading: #0f172a;
+    --text-body: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .dark {
+    --primary: #60a5fa;
+    --primary-hover: #3b82f6;
+    --accent: #93c5fd;
+    --bg-main: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+    --card-bg: rgba(15, 23, 42, 0.6);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --text-heading: #ffffff;
+    --text-body: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+  }
+
+  body {
+    @apply antialiased transition-colors duration-500 min-h-screen;
+    background: var(--bg-main) fixed;
+    color: var(--text-body);
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl border transition-all duration-500;
+    background: var(--card-bg);
+    border-color: var(--card-border);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md border shadow-xl transition-all duration-500;
+    background: var(--card-bg);
+    border-color: var(--card-border);
+  }
+
+  .btn-primary {
+    @apply text-white font-bold py-2.5 px-6 rounded-xl hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    box-shadow: 0 4px 15px var(--shadow-color);
+  }
+
+  .input-field {
+    @apply w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-maroon-500/50 transition-all duration-300;
+    background: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-heading);
+  }
+
+  .text-heading {
+    color: var(--text-heading);
+  }
+
+  .text-body {
+    color: var(--text-body);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+}
