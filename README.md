@@ -133,7 +133,7 @@ Make sure you have the following installed:
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/notes-app.git
+git clone https://github.com/asma-13/notes-app.git
 cd notes-app
 ```
 
@@ -294,9 +294,9 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 **Asma Channa**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asma-channa)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
-[![Email](https://img.shields.io/badge/Email-Say_Hi!-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iasmachanna)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/asma-13)
+[![Email](https://img.shields.io/badge/Email-Say_Hi!-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iasma.channa@gmail.com)
 
 *Built with 💜 during internship at [Syntecxhub](https://syntecxhub.com)*
 
